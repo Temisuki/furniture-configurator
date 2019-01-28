@@ -1,0 +1,31 @@
+.parent {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100%;
+  width: 100%;
+  background: rgba(255,255,255,1);
+  background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#ededed', GradientType=1 );
+  .back-button {
+    cursor: pointer;
+    position: fixed;
+    top: 25px;
+    left: 25px;
+    font-size: 20px;
+  }
+
+  .canvas-element {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+  }
+
+  .button-random-color {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+  }
+}

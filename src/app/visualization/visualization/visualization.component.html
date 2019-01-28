@@ -1,0 +1,10 @@
+<div class="parent">
+  <canvas #canvasElement class="canvas-element"></canvas>
+  <div class="back-button">
+    <span class="fa fa-chevron-left"></span>
+    Back
+  </div>
+  <app-loading *ngIf="isLoading"></app-loading>
+  <button class="button-random-color" (click)="randomColor()">Random</button>
+  <app-material-picker (colorChanged)="colorChanged($event)"></app-material-picker>
+</div>
